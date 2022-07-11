@@ -1,14 +1,13 @@
-package com.demo.controller;
+package domo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class Test {
 
-	@GetMapping("/get-name")
-	public String getName() {
-		return "welcome to azur";
+	@GetMapping("name")
+	public String name() {
+		return "azur";
 	}
 }
-
